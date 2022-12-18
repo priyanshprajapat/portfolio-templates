@@ -15,6 +15,165 @@
     <title>Priyansh</title>
     
     <meta name="description" content="Yo, Itz me Priyansh">
+    
+    <style>
+      
+      *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+#app,
+.bg-wraper,
+.bg-video {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  inset: 0;
+  line-height: 2em;
+  color: black(0, 0%, 100%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color-scheme: dark;
+}
+
+#app {
+  overflow: hidden;
+}
+
+.bg-wraper {
+  z-index: -1;
+}
+
+.bg-wraper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: hsla(0, 0%, 0%, 0.25);
+}
+
+.bg-video {
+  z-index: -1;
+  object-fit: cover;
+  background-color: white;
+}
+
+.nav-option-wraper {
+  height: 3rem;
+  width: max-content;
+  display: flex;
+  padding: 0px 1rem;
+  background: hsla(225, 25%, 25%, 0.1);
+  border-radius: 0.5rem;
+  border: 1px solid hsla(225, 25%, 25%, 0.1);
+  backdrop-filter: blur(0.2rem);
+  -webkit-backdrop-filter: blur(0.2rem);
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-option-wraper li {
+  list-style: none;
+}
+
+.nav-option {
+  height: 100%;
+  color:#022229(225, 100%, 95%);
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  background-color: transparent;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.nav-option:hover {
+  background-color: hsla(225, 25%, 25%, 0.1);
+  color: #022229;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile-icon-wraper {
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  width: max-content;
+  height: max-content;
+  border: 4px solid #022229(225, 40%, 60%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-line {
+  margin-top: 1rem;
+  color: #022229(225, 100%, 90%);
+}
+
+.name {
+  font-size: 2rem;
+  margin-inline: 0.25rem;
+  color: black;
+}
+
+.contact-icon-wraper {
+  display: flex;
+  padding: 1rem;
+}
+
+.contact-icon {
+  padding: 0.5rem;
+  flex-shrink: 0;
+}
+
+.contact-icon > svg {
+  fill: hsl(225, 100%, 90%);
+  transition: fill 250ms ease;
+}
+.contact-icon:hover > svg {
+  fill: hsl(0, 0%, 100%);
+}
+button {
+  background:none;
+  border:none;
+  transsition:25ms
+}
+button:hover{
+  opacity:0.6;
+}
+button:active{
+  opacity:0.1;
+}
+.top{
+font-family:Poppins;
+font-weight:bold;
+color:blue;
+}
+
+    </style>
    </head>
    <body>
    <div id="app">
