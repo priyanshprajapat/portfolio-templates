@@ -7,5 +7,5 @@ then make a pull request <br>
 wait for the pull request to merged <br>
 
 
-## preview
+## Preview
  https://priyansh.xyz/projects/portfolio-templates
